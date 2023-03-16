@@ -1,0 +1,31 @@
+.map{
+    margin: 0 12px;
+    .title {
+        margin: 24px 0;
+        h2 {
+            text-transform: uppercase;
+            font-size: 24px;
+            color: #555555;
+            letter-spacing: -1px;
+            display: inline-flex;
+            width: 100%;
+            position: relative;
+            span {
+                margin: 12px 12px 12px 0;
+            }
+            b {
+                position: absolute;
+                display: block;
+                height: 2px;
+                width: 100%;
+                background-color: #dbdbdb;
+                opacity: .8;
+                align-self: flex-end;
+                &:last-child {
+                    width: 13%;
+                    background-color: #ff6900;
+                }
+            }
+        }
+    }
+}

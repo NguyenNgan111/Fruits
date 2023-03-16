@@ -1,0 +1,94 @@
+.productList {
+    margin: 60px 0px;
+    .productName {
+        margin: 20px 0;
+    }
+    h2 {
+        text-align: center;
+        color: #ff9e00;
+        margin: 0 15px;
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: 700;
+        display: inline-flex;
+        justify-content: space-between;
+        width: 100%;
+        b {
+            display: block;
+            top: 50%;
+            height: 2px;
+            width: 40%;
+            background-color: #dbdbdb;
+            opacity: .8;
+            transform: translateY(50%);
+            align-self: center;
+        }
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    >ul {
+
+    }
+    .productItem {
+        overflow: hidden;
+        height: 440px;
+        position: relative;
+        border-radius: 8px;
+        .wishlist {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 40px;
+            height: 40px;
+            opacity: 0;
+            transition: opacity linear 0.2s;
+            z-index: 1;
+            &:hover button {
+                border-color: #b21212 ;
+                color: #fff ;
+                background-color: #b21212;
+            }
+            button {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                font-size: 20px;
+                border: 2px solid #ccc;
+                color: #ccc;
+            }
+        }
+        >a {
+            display: block;
+            img {
+                transition: transform linear 0.2s;
+            }
+        }
+        &:hover {
+            box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+        &:hover img {
+            transform: scale(1.1);
+        }
+        &:hover .wishlist {
+            opacity: 1;
+        }
+    }
+    .content {
+        a {
+            h4 {
+                font-size: 20px;
+                color: var(--greenColor);
+                margin: 12px 0;
+            }
+        }
+        .cost {
+            color: #ff9e00;
+            font-size: 24px;
+            font-weight: 500;
+        }
+    }
+}

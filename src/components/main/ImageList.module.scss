@@ -1,0 +1,56 @@
+.imageList{
+    margin: 0 12px;
+    .title {
+        h2 {
+            text-transform: uppercase;
+            font-size: 24px;
+            color: #555555;
+            letter-spacing: -1px;
+            display: inline-flex;
+            width: 100%;
+            position: relative;
+            span {
+                margin: 12px 12px 12px 0;
+            }
+            b {
+                position: absolute;
+                display: block;
+                height: 2px;
+                width: 100%;
+                background-color: #dbdbdb;
+                opacity: .8;
+                align-self: flex-end;
+                &:last-child {
+                    width: 13%;
+                    background-color: #ff6900;
+                }
+            }
+        }
+    }
+    .listImgs{
+        width: 100%;
+        margin: 0;
+        ul {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            li {
+                margin: 8px;
+            }
+        }
+    }
+    .imgCustomer {
+        overflow: hidden;
+        img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+            height: 296px;
+            cursor: pointer;
+            transition: transform linear 0.2s;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
